@@ -8,10 +8,6 @@
     <link rel="stylesheet" type="text/css" href="./css/style.css">
 </head>
 <body>
-    <form action="exam01-result.html" th:action="@{/exam01/result}" method="post">
-        <label for="name">名前：</label>
-        <input type="text" name="name" id="name" style="margin-bottom: 20px;"><br>
-        <button style="margin-left: 50px;">送信</button>
-    </form>
+    <p>名前:<span th:text="${name}">user-name</span></p>
 </body>
 </html>
