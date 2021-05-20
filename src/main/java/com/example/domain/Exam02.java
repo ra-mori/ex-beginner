@@ -1,6 +1,6 @@
 package com.example.domain;
 
-public class Exam2 {
+public class Exam02 {
 	private Integer sum1;
 	private Integer sum2;
 	private Integer sumResult;
