@@ -3,6 +3,15 @@ package com.example.domain;
 public class Exam2 {
 	private Integer sum1;
 	private Integer sum2;
+	private Integer sumResult;
+
+	public Integer getSumResult() {
+		return sumResult;
+	}
+
+	public void setSumResult(Integer sumResult) {
+		this.sumResult = sumResult;
+	}
 
 	public Integer getSum1() {
 		return sum1;
@@ -22,7 +31,7 @@ public class Exam2 {
 
 	@Override
 	public String toString() {
-		return "Exam2 [sum1=" + sum1 + ", sum2=" + sum2 + "]";
+		return "Exam2 [sum1=" + sum1 + ", sum2=" + sum2 + ", sumResult=" + sumResult + "]";
 	}
 
 }

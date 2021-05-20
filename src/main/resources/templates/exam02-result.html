@@ -8,10 +8,9 @@
     <link rel="stylesheet" type="text/css" href="./css/style.css">
 </head>
 <body>
-    <h1>数字を入れてください</h1>
-    <form action="exam02-result.html" th:action="@{result/calc}" method="post">
-        <input type="text" name="sum1"> + <input type="text" name="sum2"> = <br>
-        <button style="margin-top: 10px;">計算する</button>
-    </form>
+    <h1>足し算結果画面</h1>
+    <div th:object="${exam02}">
+        <p><span th:text="*{sum1}"></span> + <span th:text="*{sum2}"></span> = <span th:text="*{sumResult}"></span></p>
+    </div>
 </body>
 </html>
