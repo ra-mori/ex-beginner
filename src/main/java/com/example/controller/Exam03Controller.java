@@ -26,16 +26,16 @@ public class Exam03Controller {
 		return "exam03";
 	}
 
-	@RequestMapping("/result")
+	@RequestMapping("/tax")
 	public String result(Exam03Form form) {
+		int free = form.getPro_1() + form.getPro_2() + form.getPro_3();
+		int tax = (int) Math.round((form.getPro_1() + form.getPro_2() + form.getPro_3()) * 1.10);
+
 		Exam03 product = new Exam03();
-		int free = form.getPro_1() + form.getPro_2();
-		int tax = (int) Math.round((form.getPro_1() + form.getPro_2()) * 1.10);
-
 		product.setTax_free(free);
-		product.setTax_free(tax);
+		product.setTax_in(tax);
 
-//		application.map("product", product);
+		application.setAttribute("product", product);
 
 		return "exam03-result";
 

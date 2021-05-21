@@ -3,6 +3,7 @@ package com.example.form;
 public class Exam03Form {
 	private int pro_1;
 	private int pro_2;
+	private int pro_3;
 
 	public int getPro_1() {
 		return pro_1;
@@ -20,9 +21,17 @@ public class Exam03Form {
 		this.pro_2 = pro_2;
 	}
 
+	public int getPro_3() {
+		return pro_3;
+	}
+
+	public void setPro_3(int pro_3) {
+		this.pro_3 = pro_3;
+	}
+
 	@Override
 	public String toString() {
-		return "Exam03 [pro_1=" + pro_1 + ", pro_2=" + pro_2 + "]";
-
+		return "Exam03Form [pro_1=" + pro_1 + ", pro_2=" + pro_2 + ", pro_3=" + pro_3 + "]";
 	}
+
 }

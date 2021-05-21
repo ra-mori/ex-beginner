@@ -11,12 +11,12 @@
     <h1>合計金額</h1>
     <div th:object="${application.product}">
         <div>
-            <p>■税抜き価格</p><br>
-            <span th:text="*{tax_free}">税抜き金額</span>
+            <p>■税抜き価格</p>
+            <p><span th:text="*{tax_free}">税抜き金額</span>円</p>
         </div>
         <div>
-            <p>■税込み価格</p><br>
-            <span th:text=":{tax_in}">税込金額</span>
+            <p>■税込み価格</p>
+            <p><span th:text="*{tax_in}">税込金額</span>円</p>
         </div>
     </div>
 </body>
