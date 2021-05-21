@@ -35,7 +35,7 @@ public class Exam03Controller {
 		product.setTax_free(free);
 		product.setTax_free(tax);
 
-		application.map("product", product);
+//		application.map("product", product);
 
 		return "exam03-result";
 
