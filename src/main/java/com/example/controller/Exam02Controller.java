@@ -45,4 +45,5 @@ public class Exam02Controller {
 	public String toPage2() {
 		return "exam02-result2";
 	}
+
 }
